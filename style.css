@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 53, 46);
+    height: 700px;
+    
+    
+}
+
+.main-box{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 65vw;
+    text-align: center;
+    background-color: rgb(46, 161, 123);
+    box-shadow: inset  10px 8px 18px  rgb(23, 95, 124);
+    
+
+}
+
+#head{
+    display: flex;
+    position: fixed;
+    top: 0;
+    font-size: 3rem;
+    color: rgb(22, 65, 22);
+    text-decoration: underline;
+}
+.child{
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 30;
+    color: darkslategray;
+    border: dashed 2px;
+    padding: 9px;
+    border-radius: 5px;
+    width: auto;
+    background-color: pink;
+    
+
+}
+
+.child input{
+    background: transparent;
+    outline: 0;
+    border: 0;
+    width: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(155, 14, 33);
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+}
+
+
+button { 
+    margin: 0 5px ; 
+    border-color: #d8d065 !important; 
+    /* color: #888888 !important;  */
+    margin-bottom: 5px; 
+    padding: 5px;
+} 
+  
+button:hover { 
+    background-color: #cfa15c !important; 
+}
+
+.edit{
+    display: block ;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    background-color: bisque;
+    border-radius: 5px;
+}
+
+.new-font{     
+    margin: 5px;
+    padding: 2px 4px;
+}
+
+.new-font input{
+    text-align: center;
+    font-size: 1.2rem;
+    width: 150px;
+    margin-left: 10px;
+    border: 0;
+    outline: 0;
+}
+
+.font-size{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+.font-size select{
+    margin-left: 15px;
+    border: 0;
+}
+
+#color, #fsize{
+    display: flex;
+    align-items: center;
+    margin: 8px ;
+
+}
+
+#fsize{
+    width: 100px;
+}
+
+#color input{
+    width: 150px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    margin-left: 10px;
+}
+
+.button button{
+    width: 100px;
+    background-color: rgb(39, 105, 190);
+    outline: 0;
+    border:0;
+    height: 25px;
+    color: white;
+    
+}
+
+.button button:hover{
+    background-color:rgb(70, 144, 240);
+}

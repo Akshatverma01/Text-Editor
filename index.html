@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-text</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main-box">
+            <h1 id="head">Text Editor</h1>
+            <ul class="parent">
+                <li class="child">
+                    <!-- <p>Add Text</p> -->
+                    <input type="text" id="newText" placeholder="Add Text">
+                </li>
+            </ul>
+        </div>
+
+    <!-- Edit options -->
+    <div class="edit">
+        <div class="new-font">
+            <label for="font">Font:</label>
+            <select id="input-font" class="input"
+            onchange="f1(this);"> 
+      
+            <option value="Times New Roman" 
+                selected="selected"> 
+                Times New Roman 
+            </option> 
+            <option value="Arial">Arial</option> 
+            <option value="Bree Serif">Bree Serif</option>
+            <option value="cursive">cursive</option>
+            <option value="Dosis">Dosis</option> 
+            <option value="EB Garamond">EB Garamond</option>
+            <option value="fantasy">Fantasy</option> 
+        </select>
+        </div>
+        
+            <div class="font-size">
+                <p>Size:</p>
+                     <input type="text" id="fsize" value="1" oninput="f2(this.value)">
+
+            </div>
+           
+                <div id="color">
+                    <p>Color: </p>
+                    <input type="text" id="change-color" value="Black" oninput="f3(this.value)">
+                </div>
+            
+                <div class="options">
+                    <button type="button"
+							onclick="f4()"
+							
+							title="Bold Text"> 
+			                Bold
+                    </button> 
+                    <button type="button"
+							onclick="f5()"
+                            ondblclick="f51()"
+							class=" shadow-sm btn btn-outline-primary"
+							data-toggle="tooltip"
+							data-placement="top"
+							title="Left Align"> 
+			                <i class="fas fa-align-left"></i>Italic</button>
+                </div>
+
+                <div class="options">
+                    
+                    <button type="button"
+							onclick="f6()"
+							class="btn shadow-sm btn-outline-secondary"
+							data-toggle="tooltip"
+							data-placement="top"
+							title="Uppercase Text"> 
+			                Upper Case</button> 
+					<button type="button"
+							onclick="f7()"
+							class="btn shadow-sm btn-outline-primary"
+							data-toggle="tooltip"
+							data-placement="top"
+							title="Lowercase Text"> 
+			                Lower Case</button>
+                </div>       
+
+    </div>
+
+
+    
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
